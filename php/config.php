@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db   = 'ecommerce_db';
 $user = 'root';
-$pass = '';
+$pass = 'pael';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

@@ -85,9 +85,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop | Connect</title>
-    <link rel="stylesheet" href="../css/user-shop.css">
+    <title>Shop | Connect</title>    <link rel="stylesheet" href="../css/user-shop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body>
     <header class="header">
@@ -232,36 +232,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
                 </div>
             </div>
         </div>
-    </div>
-
-    <footer class="footer">
+    </div>    <footer class="footer">
         <div class="footer-container">
-            <div class="footer-section">
+            <div class="footer-section company-info">
                 <h3>Connect</h3>
-                <p>Address:<br>Palawan, Philippines</p>
+                <address>
+                    <p>Address:</p>
+                    <p>Palawan, Philippines</p>
+                </address>
             </div>
         
             <div class="footer-section">
                 <h3>Navigation</h3>
                 <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                    <li><a href="user-shop.php">Home</a></li>
+                    <li><a href="user-shop.php?sort=newest">New Arrivals</a></li>
                     <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p class="contact-info">
-                    <i class="bi bi-telephone-fill"></i> +1 223 719 02 11
-                </p>
-                <p class="contact-info">
-                    <i class="bi bi-envelope-fill"></i> connect@ecommerce.com
-                </p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="footer-section contact-section">
+                <div class="contact-details">
+                    <p class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 223 719 02 11</span>
+                    </p>
+                    <p class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>connect@ecommerce.com</span>
+                    </p>
                 </div>
             </div>
         </div>
